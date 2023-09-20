@@ -20,5 +20,8 @@ rm -rf hardware/xiaomi && git clone https://github.com/kenway214/hardware_xiaomi
 echo 'Cloning Leica Camera'
 git clone https://gitlab.com/marble9121630/proprietary_vendor_xiaomi_camera.git -b derp-14 vendor/xiaomi/camera
 
+# BCR
+echo 'Cloning bcr'
+git clone --depth=1 https://github.com/kenway214/vendor_bcr.git -b main vendor/bcr
 
 echo 'Cloning process is completed, now its time for lunch'
