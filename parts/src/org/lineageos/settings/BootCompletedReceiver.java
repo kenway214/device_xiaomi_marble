@@ -43,7 +43,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         NfcCameraService.startService(context);
 
         // Pocket
-        PocketService.startService(context);
+        // PocketService.startService(context);
 
         // AOD
         AodBrightnessService.startService(context);
