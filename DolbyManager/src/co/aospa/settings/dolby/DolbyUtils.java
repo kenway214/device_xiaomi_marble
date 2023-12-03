@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.dolby;
+package co.aospa.settings.dolby;
 
 import android.content.Context;
 import android.content.Intent;
@@ -62,21 +62,6 @@ public final class DolbyUtils {
         Log.i(TAG, "onBootCompleted");
         mDolbyAtmos.setEnabled(mDolbyAtmos.getDsOn());
         mDolbyAtmos.setVolumeLevelerEnabled(false);
-
-        // // Make sure to apply our configuration
-        // SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
-        // boolean dsOn = prefs.getBoolean(DolbySettingsFragment.PREF_ENABLE, true);
-        // if (!dsOn) {
-        //     // Skip if dolby is off, maybe controlled by other dax app
-        //     Log.i(TAG, "dolby is off, skip configuration");
-        //     return;
-        // }
-        // int profile = Integer.parseInt(prefs.getString(
-        //         DolbySettingsFragment.PREF_PROFILE, "0" /* dynamic */));
-        // String preset = prefs.getString(DolbySettingsFragment.PREF_PRESET, DEFAULT_PRESET);
-        // setDsOn(dsOn);
-        // setProfile(profile);
-        // setPreset(preset);
     }
 
     private void triggerPlayPause(MediaController controller) {

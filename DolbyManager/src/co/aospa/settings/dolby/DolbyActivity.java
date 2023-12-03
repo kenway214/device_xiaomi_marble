@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.dolby;
+package co.aospa.settings.dolby;
 
 import android.os.Bundle;
 

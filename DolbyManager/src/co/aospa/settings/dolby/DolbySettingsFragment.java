@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.dolby;
+package co.aospa.settings.dolby;
 
 import android.app.Activity;
 import android.content.Context;
@@ -32,8 +32,6 @@ import androidx.preference.SwitchPreference;
 
 import com.android.settingslib.widget.MainSwitchPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
-
-import org.lineageos.settings.R;
 
 public class DolbySettingsFragment extends PreferenceFragment implements
         OnPreferenceChangeListener, OnMainSwitchChangeListener {
