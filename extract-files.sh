@@ -164,6 +164,9 @@ function blob_fixup() {
     vendor/bin/hw/android.hardware.gnss-aidl-service-qti)
         "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
         ;;
+    vendor/lib/libdlbdsservice_v3_6.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefrightdolby.so | vendor/lib64/libdlbdsservice_v3_6.so)
+        "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+        ;;
     esac
 }
 
